@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer components {
+  .primary-dark {
+    @apply bg-stone-950 text-white 
+  }
+  .secondary-dark {
+    @apply bg-stone-900 text-white border-slate-300
+  }
+  .trinary-dark {
+    @apply bg-stone-800 text-white border-slate-300
+  }
+  .primary-light {
+    @apply bg-stone-50 text-black
+  }
+  .secondary-light {
+    @apply bg-stone-100 text-black
+  }
+  .trinary-light {
+    @apply bg-stone-200 text-black
+  }
+  .navbar-button {
+    @apply flex flex-row gap-2 items-center transition-all duration-200 text-2xl md:text-3xl p-2 md:px-6 md:py-2 rounded-md hover:border-b-2
+  }
+  .navbar-button-text {
+    @apply hidden md:block text-xl text-slate-300 
+  }
+}
