@@ -35,10 +35,10 @@
   .trinary-light {
     @apply bg-stone-200 text-black
   }
-  .navbar-button {
-    @apply flex flex-row gap-2 items-center transition-all duration-200 text-2xl md:text-3xl p-2 md:px-6 md:py-2 rounded-md hover:border-b-2
+  .navbar-hover {
+    @apply transition-all duration-150 text-stone-600 p-2 flex flex-col gap-2 hover:py-4 md:group-hover:items-start items-center border-slate-500 hover:border-b-2 hover:trinary-dark w-full
   }
-  .navbar-button-text {
-    @apply hidden md:block text-xl text-slate-300 
+  .button-child {
+    @apply flex flex-row items-center gap-2 transition-all duration-150 hover:text-stone-300
   }
 }
